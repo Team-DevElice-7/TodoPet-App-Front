@@ -1,0 +1,8 @@
+.nav-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-header li {
+  cursor: pointer;
+}
