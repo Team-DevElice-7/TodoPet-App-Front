@@ -5,10 +5,6 @@ import Todolist from "../../components/Todolist";
 const TodoPage = () => {
   return (
     <Container>
-      <div>TodoPage에 들어갈 컴포넌트 1</div>
-      <br />
-      <div>TodoPage에 들어갈 컴포넌트 2</div>
-      <br />
       <Todolist />
     </Container>
   );

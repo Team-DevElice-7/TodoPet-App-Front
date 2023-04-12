@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import TodoItem from "./TodoItem";
 import TodoCreate from "./TodoCreate";
 
 const Todolist = () => {
+  // Localstorage 조회
+  const todo = JSON.parse(localStorage.getItem("todo"));
+  const [todoList, setTodoList] = useState(todo);
+
   return (
-    <div>
-      <h1>Todolist</h1>
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
+    <div className="TodoList">
+      <TodoCreate todo={todoList} setTodo={setTodoList} />
+      <TodoItem todo={todoList} setTodo={setTodoList} />
       <br />
-      <TodoCreate />
     </div>
   );
 };
